@@ -1,0 +1,21 @@
+<div style="max-width:400px;margin:2rem auto;font-family:sans-serif">
+  <h3>Add Product</h3>
+  <input
+    type="text"
+    [(ngModel)]="name"
+    placeholder="Enter name"
+    style="width:70%;padding:0.3rem"
+  />
+  <button (click)="addProduct()" style="padding:0.3rem 0.6rem">Add</button>
+  <div *ngIf="message" style="margin-top:0.5rem;color:green">{{ message }}</div>
+
+  <hr style="margin:2rem 0">
+
+  <button (click)="getProducts()" style="padding:0.3rem 0.6rem">Get Products</button>
+
+  <ul *ngIf="products.length" style="margin-top:1rem;padding-left:1rem">
+    <li *ngFor="let p of products">
+      #{{ p.id }} – {{ p.name }}
+    </li>
+  </ul>
+</div>
