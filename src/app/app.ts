@@ -1,11 +1,14 @@
+// src/app/app.component.ts
 import { Component, signal } from '@angular/core';
+import { ProductsComponent } from './products/products.component';
 
 @Component({
   selector: 'app-root',
-  imports: [],
+  standalone: true,
+  imports: [ProductsComponent],
   templateUrl: './app.html',
-  styleUrl: './app.css'
+  styleUrls: ['./app.css']
 })
 export class App {
-  protected readonly title = signal('simple-products-ui');
+  title = signal('simple-products-ui');
 }
