@@ -1,0 +1,12 @@
+<!-- Email Input Popup -->
+<div *ngIf="showEmailModal" class="modal-backdrop">
+  <div class="modal-box">
+    <h2>Enter Email to Receive Notification</h2>
+    <input [(ngModel)]="emailToSend" placeholder="Enter email" type="email" />
+    <button (click)="sendEmailToQueue()" [disabled]="isSending">
+      {{ isSending ? 'Sending...' : 'Send Email' }}
+    </button>
+  </div>
+</div>
+
+
