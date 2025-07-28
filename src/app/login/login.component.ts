@@ -78,7 +78,8 @@ export class LoginComponent implements OnInit {
       return;
     }
 
-    const url = 'https://localhost:7064/api/QueueSender';
+const url = 'https://demoappservice-c7cjgvf6fdd4hpdv.westus-01.azurewebsites.net/api/QueueSender';
+
 
     const headers = new HttpHeaders({
       'Content-Type': 'application/json',
