@@ -30,7 +30,7 @@ import {
     auth: {
       clientId: 'd96bd774-adfe-428c-a493-576054b6c7be', // ✅ Frontend app client ID
       authority: 'https://login.microsoftonline.com/b41b72d0-4e9f-4c26-8a69-f949f367c91d', // ✅ Azure tenant
-      redirectUri: 'http://localhost:4200'
+      redirectUri: 'https://delightful-pebble-080d0581e.1.azurestaticapps.net'
     },
     cache: {
       cacheLocation: 'localStorage',
@@ -79,7 +79,7 @@ import {
         useValue: {
           interactionType: InteractionType.Redirect,
           protectedResourceMap: new Map([
-            ['https://localhost:7064/api/', ['api://56a2df4c-2b80-43bd-b1a1-3fbbc09f629c/.default']]
+            ['https://demoappservice-c7cjgvf6fdd4hpdv.westus-01.azurewebsites.net/api', ['api://56a2df4c-2b80-43bd-b1a1-3fbbc09f629c/.default']]
           ])
         }
       },
