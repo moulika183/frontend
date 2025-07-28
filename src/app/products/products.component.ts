@@ -10,7 +10,7 @@ import { FormsModule } from '@angular/forms';
   templateUrl: './products.component.html'
 })
 export class ProductsComponent {
-  apiUrl = 'https://localhost:7064/api/Product';  // adjust port if needed
+apiUrl = 'https://demoappservice-c7cjgvf6fdd4hpdv.westus-01.azurewebsites.net/api/Product';
   name = '';
   products: { id: number; name: string }[] = [];
   message = '';
